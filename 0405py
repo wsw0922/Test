@@ -1,0 +1,79 @@
+import random
+
+str = "파이썬 수업 씨 수업 자바 수업 파이썬 수업 파이썬 수업"
+str2 = "파이썬수업,씨수업,자바수업,이썬수업,파이썬수업"
+
+# print("**".join(str)) # 파**이**썬**수**업..
+
+# print(str2.split(",")) # ['파이썬수업', '씨수업' ...]
+# print(str2.split("업"))  # ['파이썬수', '씨수' ...]
+
+# print(str.replace("파이썬", "자바", 3))   # 3개까지만 파이썬-> 자바
+# print(str.count("파이썬"))    # 파이썬 counr
+
+# print("find : ", str.find("씨"), "index : ", str.index("씨")) # 위치찾기
+# print(str.find("AI"))   # 없는 경우 : return -1
+# print(str.index("AI"))  # 없는 경우 : error
+
+# print(3, "+", 4, "=", 7)
+# f1 = "{} + {} = {}".format(3,4,3+4)
+# f2 = "{0} + {1} = {2}, {2}, {2}".format(3,4.0,3+4.0)
+# f3 = "{0:d} + {1:f} = {2:f}, {2}, {2}".format(3,4.0,3+4.0)
+# f4 = "{0:10d} + {1:10f} = {2:10.3f}, {2}, {2}".format(3,4.0,3+4.0)
+# print(f1) # 3 + 4 = 7
+# print(f2) # 3 + 4 = 7, 7, 7
+# print(f3) # d, f 표현
+# print(f4) # 1칸 .3자리
+
+# print(type(True), type(False)) # bool 타입
+# a = "hello"
+# print(bool("hello"), bool("hi"), bool(3), bool(3.14), bool(-1)) # 전부 True
+# print(bool(""), bool(0)) # False
+# print(int(True), int(False), str(True))
+
+# lunch = input("밥 먹을래?")
+# if lunch == "yes":
+#     print("밥을 먹고 싶군요")
+#     cafeteria = input("학식?")
+#     if cafeteria == "yes":
+#         print("8호관 1층으로")
+#     else :
+#         print("학식을 싫어하는군요")
+#         subway = input("subway?")
+#         if subway == 'yes':
+#             print("8호관 1층으로")
+#         else :
+#             print("subway를 싫어하는군요")
+# else :
+#     print("밥 먹기 싫군요")
+
+# sum = 0
+
+# for i in range(1, 11):
+#     sum += i
+# print(sum)
+
+# while(True):
+#     word = input("단어를 입력하세요")
+#     if word == "exit":
+#         print("종료합니다.")
+#         break # 종료
+#     elif word == "apple" :
+#         print("cotinue")
+#         continue # 세 번 출력 무시
+#     else :
+#         for i in range(3):
+#             print(word, end = " ") # 입력된 단어 세 번 출력
+#         print(word, " 세 번 출력 완료")
+
+count = 0
+while(True):
+    height = int(input("키가 몇인가요?"))
+    if height >= 150:
+        print("사람이 한 명 추가되었습니다.")
+        count += 1
+    else :
+        print("150 이상만 탈 수 있는 놀이기구입니다.")
+    if count >= 4:
+        print("놀이기구 운행을 시작합니다.")
+        break
